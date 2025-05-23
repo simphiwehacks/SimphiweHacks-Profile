@@ -1,4 +1,3 @@
-# SimphiweHacks-Profile
 # Simphiwe's Portfolio
 
 Welcome to my personal portfolio website. This site showcases my skills, projects, and contact information.
