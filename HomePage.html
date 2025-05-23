@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simphiwe Hacks Portfolio</title>
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: #f1f1f1;
+            scroll-behavior: smooth;
+        }
+
+        .navbar {
+            background-color: #000;
+        }
+
+        .bg-cover {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        #hero {
+    background-image: url('images/bioBack.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+        .card {
+            border: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .section-title {
+            margin-bottom: 2rem;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 5px;
+            border-bottom: 3px solid #00bcd4;
+        }
+
+        .btn-outline-info {
+            border-radius: 50px;
+        }
+
+        /* Back to top button */
+        #backToTop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            z-index: 999;
+        }
+        /* Custom Style for Glass effect*/
+        .glass-card {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-radius: 15px;
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .glass-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">SimphiweHacks</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+ <!-- Hero Section -->
+ <section id="hero" class="vh-100 d-flex align-items-center justify-content-center position-relative text-white">
+    <!-- Optional dark overlay -->
+    <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0, 0, 0, 0.6); z-index: 1;"></div>
+
+    <div class="container position-relative z-2 text-center" data-aos="zoom-in">
+        <div class="glass-card p-5 rounded-4 shadow-lg d-inline-block">
+            <img src="images/simpic.jpeg" alt="Simphiwe" class="rounded-circle shadow-lg mb-4 border border-4 border-light" style="width: 220px; height: 220px; object-fit: cover;">
+            <h1 class="display-3 fw-bold">Hi, I'm Simphiwe</h1>
+            <p class="lead text-light morph-text">
+                <span id="typed-text"></span><span id="cursor">|</span>
+              </p>
+               <a href="#about" class="btn btn-primary btn-lg mt-3">Explore More</a>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container text-center" data-aos="fade-up">
+            <h2 class="section-title">About Me</h2>
+            <p class="mb-4">I'm passionate about solving real-world problems through innovative software solutions.</p>
+            <div class="btn-group">
+                <a href="#skills" class="btn btn-outline-info">Skills</a>
+                <a href="#experience" class="btn btn-outline-info">Experience</a>
+                <a href="#education" class="btn btn-outline-info">Education</a>
+            </div>
+        </div>
+    </section>
+
+ <!-- Skills Section with Percentages -->
+<section id="skills" class="py-5" style="background: linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 100%);">
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-center section-title mb-5 text-white">Skills</h2>
+      <div class="row">
+        <div class="col-md-10 mx-auto">
+          <!-- Skill -->
+          <div class="mb-4">
+            <h5 class="text-white">HTML & CSS <span class="float-end">95%</span></h5>
+            <div class="progress bg-secondary" style="height: 8px;">
+              <div class="progress-bar bg-primary" role="progressbar" style="width: 95%;" data-aos="width-animation" data-aos-delay="100"></div>
+            </div>
+          </div>
+          <!-- Skill -->
+          <div class="mb-4">
+            <h5 class="text-white">JavaScript (ES6+) <span class="float-end">90%</span></h5>
+            <div class="progress bg-secondary" style="height: 8px;">
+              <div class="progress-bar bg-warning" role="progressbar" style="width: 90%;" data-aos="width-animation" data-aos-delay="200"></div>
+            </div>
+          </div>
+          <!-- Skill -->
+          <div class="mb-4">
+            <h5 class="text-white">React / Next.js <span class="float-end">75%</span></h5>
+            <div class="progress bg-secondary" style="height: 8px;">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 75%;" data-aos="width-animation" data-aos-delay="300"></div>
+            </div>
+          </div>
+          <!-- Skill -->
+          <div class="mb-4">
+            <h5 class="text-white">Software Engineering <span class="float-end">90%</span></h5>
+            <div class="progress bg-secondary" style="height: 8px;">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 90%;" data-aos="width-animation" data-aos-delay="400"></div>
+            </div>
+          </div>
+          <!-- Skill -->
+          <div class="mb-4">
+            <h5 class="text-white">Mobile App Development <span class="float-end">75%</span></h5>
+            <div class="progress bg-secondary" style="height: 8px;">
+              <div class="progress-bar bg-danger" role="progressbar" style="width: 75%;" data-aos="width-animation" data-aos-delay="500"></div>
+            </div>
+          </div>
+          <!-- Skill -->
+          <div class="mb-4">
+            <h5 class="text-white">IoT Solutions <span class="float-end">70%</span></h5>
+            <div class="progress bg-secondary" style="height: 8px;">
+              <div class="progress-bar bg-light text-dark" role="progressbar" style="width: 70%;" data-aos="width-animation" data-aos-delay="600"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<!-- Education Section -->
+<section id="education" class="py-5" style="background: linear-gradient(135deg, #121212 0%, #1e1e1e 100%);">
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-center section-title mb-5 text-white">Education</h2>
+  
+      <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-4 shadow-lg p-4">
+        <div class="row align-items-center g-4">
+          <!-- Icon Column -->
+          <div class="col-md-2 text-center">
+            <div class="bg-primary bg-opacity-75 rounded-circle d-flex align-items-center justify-content-center mx-auto shadow" style="width: 60px; height: 60px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" class="bi bi-mortarboard" viewBox="0 0 16 16">
+                <path d="M8.211.5a.5.5 0 0 0-.422 0L.777 4 8 7.5 15.223 4 8.211.5zM1.5 4.803v2.294c0 .926.558 1.808 1.496 2.248a8.237 8.237 0 0 0 3.254.655c1.144 0 2.249-.236 3.254-.655.938-.44 1.496-1.322 1.496-2.248V4.803L8 8.27 1.5 4.803z"/>
+              </svg>
+            </div>
+          </div>
+  
+          <!-- Info Column -->
+          <div class="col-md-10">
+            <h4 class="fw-bold text-white mb-2">
+              Bachelor of Information and Communication Technology in Applications Development
+            </h4>
+            <p class="mb-1 text-white"><strong>Sol Plaatje University</strong></p>
+            <p class="mb-2 text-white"><em>2020 – 2023</em></p>
+            <p class="text-white-50 small">
+              A comprehensive 3-year degree focused on full-stack development, modern digital systems, and software engineering. Specialized in creating scalable, user-centered applications and real-world digital solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+ <!-- Experience Timeline -->
+<section id="experience" class="py-5 bg-black text-light">
+    <div class="container">
+      <h2 class="text-center section-title mb-5" data-aos="fade-up">Experience</h2>
+  
+      <ul class="timeline list-unstyled">
+        
+        <li class="mb-5" data-aos="fade-up">
+          <div class="border-start border-4 border-primary ps-3">
+            <h5 class="fw-bold">🚀 Hackathon - MLab, Kimberley</h5>
+            <p class="text-info small mb-1">3rd Place Winner · 16 Feb – 23 Feb 2020</p>
+            <p class="mb-0 small">
+              Designed a market-ready <strong>Web App</strong> in a fast-paced team hackathon. Focused on business strategy, agile development, and prototype delivery.
+            </p>
+          </div>
+        </li>
+  
+        <li data-aos="fade-up">
+          <div class="border-start border-4 border-info ps-3">
+            <h5 class="fw-bold">💡 Hackathon - SITA x Sol Plaatje University</h5>
+            <p class="text-info small mb-1">2nd Place Winner · Sol Plaatje University</p>
+            <p class="mb-2 small">
+              Collaborated across departments to build digital infrastructure solutions. Achieved 2nd place with a working prototype and pitch.
+            </p>
+            <img src="images/sitahack.jpeg" alt="SITA Hackathon" class="img-fluid rounded shadow" style="max-height: 180px; object-fit: cover;">
+          </div>
+        </li>
+  
+      </ul>
+    </div>
+  </section>
+  
+  
+
+   <!-- Projects -->
+<section id="projects" class="py-5 bg-black text-light">
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-center section-title mb-5">Projects</h2>
+  
+      <!-- Project Card -->
+      <div class="card bg-dark text-light mb-4 shadow-lg border-0 rounded-4">
+        <div class="row g-0">
+          <!-- Project Info -->
+          <div class="col-lg-8 col-md-7 p-4 d-flex flex-column justify-content-center">
+            <div class="card-body">
+              <h4 class="fw-bold mb-2">🌱 Smart Irrigation System</h4>
+              <p class="text-info mb-1">Agritech Innovation Programme · IoT / Embedded Systems</p>
+              <p class="text-light small mb-3">
+                Developed a <strong>Smart Irrigation System</strong> using ESP32, moisture sensors, and real-time cloud monitoring to automate precision agriculture. Focused on <strong>water efficiency</strong> and <strong>sustainable farming</strong>.
+              </p>
+              <!-- Technology Tags -->
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-secondary">ESP32</span>
+                <span class="badge bg-secondary">IoT</span>
+                <span class="badge bg-secondary">Sensor Integration</span>
+                <span class="badge bg-secondary">Cloud Sync</span>
+                <span class="badge bg-secondary">C++</span>
+                <span class="badge bg-secondary">Precision Agriculture</span>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Video Preview -->
+          <div class="col-lg-4 col-md-5 d-flex align-items-center justify-content-center p-3">
+            <video controls class="w-100 rounded shadow" style="max-height: 220px;">
+              <source src="videos/iot.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+
+ <!-- Services -->
+<section id="services" class="py-5 bg-black text-light">
+    <div class="container" data-aos="fade-left">
+      <h2 class="text-center section-title mb-5">Let's Collaborate</h2>
+  
+      <p class="text-center mb-4 lead">
+        I’m excited to join forces on projects where innovation, creativity, and results matter. If you’re looking for a dedicated partner to build impactful digital experiences, let’s talk!
+      </p>
+  
+      <div class="row justify-content-center g-4">
+  
+        <div class="col-md-4">
+          <div class="card bg-dark text-light h-100 border-0 shadow-lg rounded-4 p-4 text-center">
+            <h3 class="mb-3">💻 Web Development</h3>
+            <p>Building scalable, efficient websites and apps using the latest technologies. Together, we can craft something amazing.</p>
+          </div>
+        </div>
+  
+        <div class="col-md-4">
+          <div class="card bg-dark text-light h-100 border-0 shadow-lg rounded-4 p-4 text-center">
+            <h3 class="mb-3">🎨 UI/UX Design</h3>
+            <p>Creating intuitive, beautiful designs focused on user experience. Let’s collaborate to make your product both usable and delightful.</p>
+          </div>
+        </div>
+  
+        <div class="col-md-4">
+          <div class="card bg-dark text-light h-100 border-0 shadow-lg rounded-4 p-4 text-center">
+            <h3 class="mb-3">🤖 Android App Development</h3>
+            <p>Designing and developing user-friendly Android applications. Partner with me to build smooth, efficient mobile experiences.</p>
+          </div>
+        </div>
+  
+      </div>
+  
+      <div class="text-center mt-5">
+        <a href="#contact" class="btn btn-primary btn-lg px-5">
+          Hire Me &nbsp; 
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-hand-index-thumb" viewBox="0 0 16 16">
+            <path d="M6.5 1a.5.5 0 0 1 .5.5v4.793l.646-.647a.5.5 0 1 1 .708.708L7.707 7.5l1.147 1.146a.5.5 0 0 1-.708.708L7 8.207V11a1 1 0 0 1-2 0V3a1 1 0 0 1 1-1h.5z"/>
+            <path d="M3 13a2 2 0 1 0 4 0v-2H4v2a1 1 0 1 1-1-1H3z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  
+
+    <!-- Contact / Footer Section -->
+<footer class="bg-dark text-light pt-5 pb-3 mt-5">
+    <div class="container text-center">
+      <h4 class="fw-bold mb-4">📬 Let's Connect</h4>
+      <p class="mb-3">Feel free to reach out for collaborations, projects, or just a tech chat!</p>
+      
+      <!-- Social Media Icons -->
+      <div class="d-flex justify-content-center gap-4 mb-4">
+        <a href="mailto:simphiwekhorae32@gmail.com" class="text-info fs-4" target="_blank"><i class="bi bi-envelope-fill"></i></a>
+        <a href="http://github.com/simphiwehacks" class="text-light fs-4" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://www.facebook.com/share/1YKGaNHAyj/" class="text-light fs-4" target="_blank">
+            <i class="bi bi-facebook"></i>
+          </a>
+          
+        <a href="https://www.linkedin.com/in/simphiwe-khorae-6634a8257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-primary fs-4" target="_blank"><i class="bi bi-linkedin"></i></a>
+          <a href="https://wa.me/0731127460
+          " target="_blank" class="text-light fs-4"><i class="bi bi-whatsapp"></i></a>
+    
+    </div>
+  
+      <small class="text-secondary">&copy; 2025 SimphiweHacks. All Rights Reserved.</small>
+    </div>
+  </footer>
+  
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn btn-info rounded-circle"><i class="bi bi-arrow-up"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+
+        // Back to top
+        const backToTop = document.getElementById('backToTop');
+        window.onscroll = () => {
+            if (window.scrollY > 300) {
+                backToTop.style.display = 'block';
+            } else {
+                backToTop.style.display = 'none';
+            }
+        };
+        backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+   
+   //HERO SECTION ANIMATION
+   const texts = [
+  "Full-stack Developer crafting immersive, modern digital experiences.",
+  "Open-source enthusiast contributing to community projects.",
+  "Problem solver driven by passion and creativity.",
+  "Lifelong learner exploring the latest tech trends."
+];
+
+let count = 0;
+let index = 0;
+let currentText = '';
+let letter = '';
+let isDeleting = false;
+
+function typeLoop() {
+  currentText = texts[count];
+  
+  if (isDeleting) {
+    letter = currentText.substring(0, --index);
+  } else {
+    letter = currentText.substring(0, ++index);
+  }
+
+  document.getElementById('typed-text').textContent = letter;
+
+  let typingSpeed = isDeleting ? 50 : 100;
+
+  if (!isDeleting && letter === currentText) {
+    typingSpeed = 2000;
+    isDeleting = true;
+  } else if (isDeleting && letter === '') {
+    isDeleting = false;
+    count = (count + 1) % texts.length;
+    typingSpeed = 500;
+  }
+
+  setTimeout(typeLoop, typingSpeed);
+}
+
+document.addEventListener("DOMContentLoaded", typeLoop);
+    </script>
+
+</body>
+</html>
+
+
+
