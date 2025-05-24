@@ -13,9 +13,6 @@ Welcome to my personal portfolio website. This site showcases my skills, project
 - JavaScript
 - Bootstrap
 
-## 📸 Screenshots
-
-
 ## 📥 How to Use
 
 Clone the repo and open `index.html` in your browser:
